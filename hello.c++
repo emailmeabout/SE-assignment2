@@ -13,12 +13,12 @@
 #include <string.h>
 
 int main() {
-    char name[50];  // Buffer to store user input
+    char name[50];  
 
     printf("Enter your name: ");
     fgets(name, sizeof(name), stdin);  // Read input including spaces
 
-    // Remove trailing newline character if present
+    
     name[strcspn(name, "\n")] = 0;
 
     // Check if the user entered anything
